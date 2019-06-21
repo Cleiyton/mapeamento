@@ -1,0 +1,104 @@
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                    
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputAddress">Setores</label>
+                    <select class="form-control">
+                        <option>Corae</option>
+                        <option>Administrativo</option>
+                        <option>Select padrão</option>
+                        <option>Select padrão</option>
+                        <option>Select padrão</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                        <label for="inputAddress">Se iniciam no setor?</label>
+                        <select class="form-control">
+                        <option>Sim</option>
+                        <option>Não</option>
+                      </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                            <label for="inputAddress">Data de Criação</label>
+                            <input type="date" name="bday" max="3000-12-31" 
+                            min="1000-01-01" class="form-control">
+                          </div>
+
+                          <div class="form-group col-md-2">
+                                <label for="inputAddress">Situação</label>
+                                <select class="form-control">
+                                <option>Ativo</option>
+                                <option>Inativo</option>
+                                <option>Publicado</option>
+                                <option>Em ediçâo</option>
+                              </select>
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputAddress">Indentificação do Documento</label>
+                                <input type="text" class="form-control">
+                              </div>
+    
+                         </div>
+                         <br>
+                         <br>
+                         <div class="row">
+                         <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary">Pesquisar</button>
+                         </div>
+                         </div>
+              </form>
+              </div>
+              </div>
+              <br>
+              <hr style="color: black">
+              <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Processos</h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let row of tableData1.dataRows">
+                                                <td *ngFor="let cell of row">{{cell}}</td>
+                                                <td>
+                                                    <div class ="row">
+                                                            <a><i class="ti-search"></i></a>
+                                                            <a><i class="ti-pencil"></i></a>
+                                                            <a><i class="ti-close"></i></a>
+                                                            <a><i class="ti-trash"></i></a>
+                                                                 
+                                                                    </div>
+                                                    <td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                
+                                </div>
+                            </div>
+                      </div>
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
